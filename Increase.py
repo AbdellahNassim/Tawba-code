@@ -39,6 +39,14 @@ def Increase():
        print("O Allah forgive all muslims and muslimahs, believers and believers, the living and the dead, and have mercy upon us and have mercy upon them")
        print("اللهم اغفر لجميع المسلمين و المسلمات و المؤمنين و المؤمنات الأحياء منهم و الأموات و ارحمنا و ارحمهم و اعف عنا و عنهم")
        print("O Allah forgive all muslims and muslimahs, believers and believers, the living and the dead, and have mercy upon us and have mercy upon them, and pardon us and pardon them")
+
+def ackermann(m, n):
+    if m == 0:
+        return n + 1
+    elif m > 0 and n == 0:
+        return ackermann(m - 1, 1)
+    elif m > 0 and n > 0:
+        return ackermann(m - 1, ackermann(m, n - 1))
 if __name__ == '__main__':
-    with Pool(math.pow(math.inf,math.inf)) as p:
-        p.map(Increase, range(math.pow(math.inf,math.inf)))
+    with Pool(ackermann(math.pow(math.inf,math.inf),math.pow(math.inf,math.inf))) as p:
+        p.map(Increase, range(ackermann(math.pow(math.inf,math.inf),math.pow(math.inf,math.inf))))
