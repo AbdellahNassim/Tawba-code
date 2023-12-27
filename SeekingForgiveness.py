@@ -37,6 +37,8 @@ def SeekForgiveness():
        print("اللهم إني أسألك الوسيلة و الفضيلة و أسألك الجنة و أعوذ بك من النار")
        print("O Allah, I ask You for the means of approach and virtue, and I ask You for Paradise and I seek refuge in You from the Fire")
        print("اللهم إني أسألك أعلى مرتبة عندك و أسألك كل ما قرب إليها من قول أو عمل و أعوذ بك من أسفل مرتبة عندك و أعوذ بك من كل ما قرب إليها من قول أو عمل")
+       print("اللهم اجعلني مثلك في كل خير")
+       print("O Allah, make me like You in every good")
 def ackermann(m, n):
     if m == 0:
         return n + 1
